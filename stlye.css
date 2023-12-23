@@ -1,0 +1,32 @@
+.weatherContainer{
+    margin-left: 300px;
+}
+
+.dayContainers{
+    display: flex;
+} 
+.days {
+    display: inline;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+  
+.weatherIcon img {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+    .weatherContainer{
+        margin-left:200px;
+    }
+    .dayContainers{
+        display: flex;
+    }
+    .days{
+        display:block;
+    }
+}

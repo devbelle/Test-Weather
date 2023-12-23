@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Search Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stlye.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark flex-md-column">
+          <a class="navbar-brand" href="#">City Search</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav flex-md-column">
+              <li class="nav-item">
+                <form class="form-inline my-2 my-md-0" id="citySearch">
+                  <input class="form-control" type="text" id="cityInput" placeholder="City" aria-label="Search">
+                  <button class="btn btn-primary my-2 my-md-0" type="submit" id="cityName" onclick="getInfo()">Search</button>
+                </form>
+              </li>
+            </ul>
+            <ul id="savedCityList">
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="weatherContainer">
+        <div class="dayContainers">
+          <div class="days">
+            <p class="weather" id="day1">day</p>
+            <p class="image"><img src="weather-image.jpg" class="imgClass" id="img1" alt="Weather Image"></p>
+            <p class="temp" id="day1Temp">Temperature:</p>
+            <p class="wind" id="day1Wind">Wind:</p>
+            <p class="humidity" id="day1Humidity">Humidity:</p>
+          </div>
+          <div class="days">
+            <p class="weather" id="day2">day</p>
+            <p class="image"><img src="weather-image.jpg" class="imgClass" id="img2" alt="Weather Image"></p>
+            <p class="temp" id="day2Temp">Temperature:</p>
+            <p class="wind" id="day2Wind">Wind:</p>
+            <p class="humidity" id="day2Humidity">Humidity:</p>
+          </div>
+          <div class="days">
+            <p class="weather" id="day3">day</p>
+            <p class="image"><img src="weather-image.jpg" class="imgClass" id="img3" alt="Weather Image"></p>
+            <p class="temp" id="day3Temp">Temperature:</p>
+            <p class="wind" id="day3Wind">Wind:</p>
+            <p class="humidity" id="day3Humidity">Humidity:</p>
+          </div>
+          <div class="days">
+            <p class="weather" id="day4">day</p>
+            <p class="image"><img src="weather-image.jpg" class="imgClass" id="img4" alt="Weather Image"></p>
+            <p class="temp" id="day4Temp">Temperature:</p>
+            <p class="wind" id="day4Wind">Wind:</p>
+            <p class="humidity" id="day4Humidity">Humidity:</p>
+          </div>
+          <div class="days">
+            <p class="weather" id="day5">day</p>
+            <p class="image"><img src="weather-image.jpg" class="imgClass" id="img5" alt="Weather Image"></p>
+            <p class="temp" id="day5Temp">Temperature:</p>
+            <p class="wind" id="day5Wind">Wind:</p>
+            <p class="humidity" id="day5Humidity">Humidity:</p>
+          </div>
+        </div>
+      </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="script.js"></script>
+</body>
